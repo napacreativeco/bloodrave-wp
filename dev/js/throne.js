@@ -16,6 +16,7 @@ function getMouse(e) {
 *
 */
 const modelViewer = document.querySelector('#myModel');
+const modelViewerMobile = document.querySelector('#myModelMobile');
 
 document.onmousemove = function(e) {
     const mouse = getMouse(e);
@@ -35,7 +36,7 @@ function handleOrientation(event) {
 
     reader.innerHTML = x + ", " + y + ", " + z;
 
-    modelViewer.cameraOrbit = `${x}deg` + `${z}deg` + `"${y * 50}%"`;
+    modelViewerMobile.cameraOrbit = `${x}deg` + `${z}deg` + `"${y * 50}%"`;
   
 // Do something awesome.
 }
