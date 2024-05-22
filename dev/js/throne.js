@@ -26,8 +26,6 @@ document.onmousemove = function(e) {
     coor.innerHTML = 'x'+mouse[0]*100 + 'y'+mouse[1]*100;
 }
 
-window.addEventListener("load", deviceMotionPermission());
-
 function handleOrientation(event) {
     const x = event.accelerationIncludingGravity.x;
     const y = event.accelerationIncludingGravity.y;
@@ -36,6 +34,8 @@ function handleOrientation(event) {
     var reader = document.getElementById("reader");
 
     reader.innerHTML = x + ", " + y + ", " + z;
+
+    modelViewer.cameraOrbit = `${x}deg` + `${y}deg ` + `"110%"`;
   
 // Do something awesome.
 }
@@ -59,10 +59,6 @@ function deviceMotionPermission() {
 }
 
 
-
-
-
-window.addEventListener("devicemotion", handleMotionEvent, true);
   
 
 
