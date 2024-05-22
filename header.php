@@ -36,7 +36,7 @@
 	</div>
 
 	<div class="mobile-model">
-		<?php get_template_part('template-parts/model'); ?>
+		<?php get_template_part('template-parts/model-mobile'); ?>
 	</div>
 	
 
