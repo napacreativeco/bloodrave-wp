@@ -31,13 +31,10 @@
 
 	<?php get_template_part('template-parts/navbar'); ?>
 
-	<div class="desktop-model">
-		<?php get_template_part('template-parts/model'); ?>
-	</div>
+	<?php get_template_part('template-parts/model'); ?>
 
-	<div class="mobile-model">
-		<?php get_template_part('template-parts/model-mobile'); ?>
-	</div>
+	<?php get_template_part('template-parts/model-mobile'); ?>
+
 	
 
 	<?php get_template_part('template-parts/menu-overlay'); ?>
