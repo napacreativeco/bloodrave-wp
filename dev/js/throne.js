@@ -25,20 +25,20 @@ document.onmousemove = function(e) {
 }
 
 
-window.addEventListener('devicemotion', function(event) {
-    var x = event.acceleration.x;
-    var y = event.acceleration.y;
-    var z = event.acceleration.z;
-                    
-    var ralpha = event.rotationRate.alpha;
-    var rbeta = event.rotationRate.beta;
-    var rgamma = event.rotationRate.gamma;
-                    
-    var interval = event.interval;
+function handleMotionEvent(event) {
+    const x = event.accelerationIncludingGravity.x;
+    const y = event.accelerationIncludingGravity.y;
+    const z = event.accelerationIncludingGravity.z;
+    
+    var reader = document.getElementById("reader");
 
-    const modelViewer = document.querySelector('#myModel');
-    modelViewer.cameraOrbit = `${ralpha}deg` + `${rbeta}deg ` + `"110%"`;
-});
+    reader.innerHTML = x + ", " + y + ", " + z;
+  
+// Do something awesome.
+}
+
+window.addEventListener("devicemotion", handleMotionEvent, true);
+  
 
 
 /*

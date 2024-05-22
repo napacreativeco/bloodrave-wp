@@ -1,6 +1,9 @@
 <footer>
     <div id="coordinates"></div>
-    <div class="attribution"><div id="coordinates"></div>code by <a href="https://throne.work" title="Throne">Throne</a></div>
+    <div class="attribution">
+        <div id="reader"></div>
+        <div id="coordinates"></div>
+        code by <a href="https://throne.work" title="Throne">Throne</a></div>
 </footer>
 
 <?php 
