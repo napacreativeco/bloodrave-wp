@@ -30,6 +30,10 @@
     </div>
 </div>
 
+<div class="request-motion">
+    <button onclick="deviceMotionPermission()">request motion</button>
+</div>
+
 <div class="marquee-holder">
     <div class="marquee">
         <div class="track">
