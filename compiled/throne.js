@@ -28,6 +28,18 @@ document.onmousemove = function(e) {
 
 window.addEventListener("load", deviceMotionPermission());
 
+function handleOrientation(event) {
+    const x = event.accelerationIncludingGravity.x;
+    const y = event.accelerationIncludingGravity.y;
+    const z = event.accelerationIncludingGravity.z;
+    
+    var reader = document.getElementById("reader");
+
+    reader.innerHTML = x + ", " + y + ", " + z;
+  
+// Do something awesome.
+}
+
 function deviceMotionPermission() {
     if (typeof DeviceMotionEvent.requestPermission === 'function') {
       // Handle iOS 13+ devices.
@@ -48,17 +60,7 @@ function deviceMotionPermission() {
 
 
 
-function handleOrientation(event) {
-    const x = event.accelerationIncludingGravity.x;
-    const y = event.accelerationIncludingGravity.y;
-    const z = event.accelerationIncludingGravity.z;
-    
-    var reader = document.getElementById("reader");
 
-    reader.innerHTML = x + ", " + y + ", " + z;
-  
-// Do something awesome.
-}
 
 window.addEventListener("devicemotion", handleMotionEvent, true);
   
