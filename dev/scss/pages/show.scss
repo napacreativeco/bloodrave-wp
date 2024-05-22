@@ -1,0 +1,63 @@
+ul.shows-list {
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        border-bottom: 1px solid var(--white);
+    }
+
+    .info {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 14px;
+
+        p {
+            margin: 0
+        }
+    }
+
+    p.lineup {
+        font-family: var(--times);
+        font-size: 32px;
+        margin: 0 0 10px 0;
+    }
+
+    .flier p {
+        margin: 0 0 10px 0;
+        letter-spacing: -1px;
+        cursor: pointer;
+    }
+
+    .flier p:hover {
+        color: var(--green);
+    }
+
+}
+
+.flier-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(3px);
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: auto;
+        height: 100%;
+        max-height: 80vh;
+    }
+}

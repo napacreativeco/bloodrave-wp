@@ -1,0 +1,25 @@
+.woocommerce-message {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    align-items: center;
+    border: 1px solid var(--green);
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin-bottom: var(--top-padding);
+    font-size: 12px;
+    text-transform: uppercase;
+    background: var(--green);
+    color: var(--black);
+    animation: fadingOut 0.5s forwards;
+    animation-delay: 3s;
+
+    a {
+        display: none;
+    }
+}
+
+@keyframes fadingOut {
+    0% {  }
+    100% { display: none; }
+}

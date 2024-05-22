@@ -1,0 +1,117 @@
+/*
+* Navbar
+*/
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: var(--white);
+    z-index: 9;
+    text-transform: uppercase;
+    line-height: 1;
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 var(--side-padding);
+        position: relative;
+    }
+
+    a {
+        display: block;
+    }
+
+    a:hover {
+        color: var(--green);
+        text-decoration: none;
+    }
+
+    .active {
+        color: var(--green);
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 4px;
+        word-spacing: 0.01vw;
+        font-family: var(--times);
+        line-height: 0.75;
+
+        a {
+            font-size: 4vw;
+            letter-spacing: 0.08vw;
+            white-space: nowrap;
+        }
+
+        span.liner {
+            font-family: var(--mono);
+            font-size: 1vw;
+            line-height: 85%;
+            color: var(--green);
+            word-spacing: 1px;
+            white-space: nowrap;
+        }
+    }
+
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        gap: 0px;
+        list-style: none;
+        margin: 0;
+        font-size: 16px;
+    }
+
+    ul a {
+        border: 1px solid var(--white);
+        border-radius: 25px;
+        padding: 0px 20px;
+    }
+
+}
+
+body.admin-bar .navbar {
+    margin-top: 34px !important;
+}
+
+@media screen and (max-width: 767px) {
+    
+    .navbar {
+        padding: 10px 0;
+        nav.desktop {
+            display: none;
+        }
+
+        .logo {
+            a {
+                font-size: 8vw;
+                letter-spacing: 0.08vw;
+                white-space: nowrap;
+            }
+
+            span.liner {
+                font-family: var(--mono);
+                font-size: 2vw;
+                line-height: 85%;
+                color: var(--green);
+                word-spacing: 1px;
+                white-space: nowrap;
+            }
+        }
+
+    }
+
+    body.admin-bar .navbar {
+        margin-top: 48px !important;
+    }
+
+}

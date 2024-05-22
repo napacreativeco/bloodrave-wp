@@ -1,0 +1,88 @@
+/*
+* Announcement Overlay
+*/
+#announcement-overlay {
+    position: fixed;
+    bottom: 30px;
+    right: -100%;
+    background: #000000;
+    color: #ffffff;
+    border-radius: 12px;
+    transition: right 1s ease-in-out;
+}
+
+#announcement-overlay .wrap {
+    position: relative;
+    padding: 30px;
+}
+
+#announcement-overlay h3 {
+    margin: 0 0 6px 0;
+}
+
+#announcement-overlay p {
+    margin: 0;
+    font-size: 12px;
+}
+
+#announcement-overlay button {
+    background: var(--green);
+    border: 0;
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-family: var(--times);
+    font-size: 26px;
+    letter-spacing: 0px;
+    border: 2px solid var(--green);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+#announcement-overlay button:hover {
+    background: #000000;
+    color: var(--white);
+    border: 2px solid var(--white);
+}
+
+#announcement-overlay .closer {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--white);
+    color: var(--black);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 0;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--white);
+}
+
+#announcement-overlay .closer span {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+#announcement-overlay .closer:hover {
+    background: #000;
+    color: var(--white);
+    border: 2px solid var(--white);
+}
+
+
+@media screen and (max-width: 767px) {
+
+    #announcement-overlay {
+        max-width: calc(100% - 60px);
+    }
+
+}

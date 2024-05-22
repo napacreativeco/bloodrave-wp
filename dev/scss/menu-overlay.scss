@@ -1,0 +1,96 @@
+#menu-overlay {
+    position: fixed;
+    top: 6px;
+    right: -100%;
+    bottom: 6px;
+    left: 100%;
+    z-index: 99;
+    background: var(--black);
+    color: var(--white);
+    padding: var(--side-padding);
+    border-radius: 25px;
+    border: 1px solid var(--white);
+    transition: all 0.2s ease-in-out;
+
+    #close-menu {
+        color: var(--black);
+        font-family: var(--times);
+        text-align: center;
+        background: var(--white);
+        font-size: 20px;
+        line-height: 0;
+        padding: 20px;
+        display: block;
+        border-radius: 50px;
+        margin-bottom: 10px;
+    }
+
+    .holder {
+        height: calc(100% - 50px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .logo {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 4px;
+            word-spacing: -12px;
+            font-family: var(--times);
+            font-size: 40px;
+            text-transform: uppercase;
+    
+            span.liner {
+                font-family: var(--mono);
+                font-size: 10px;
+                color: var(--green);
+                padding-top: 6px;
+                word-spacing: 1px;
+                text-transform: none;
+            }
+    
+        }
+    
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            li {
+                border-bottom: 1px solid var(--white);
+            }
+    
+            a {
+                font-family: var(--times);
+                font-size: 38px;
+            }
+        }
+
+        .socials ul {
+            list-style: none;
+            margin: 0;
+            padding: 0 0 10px 0;
+            display: flex;
+            flex-direction: row;
+            gap: 12px;
+            
+            a {
+                border: 1px solid var(--white);
+                padding: 10px 20px;
+                border-radius: 25px;
+            }
+        }
+
+    }
+
+
+}
+
+
+body.admin-bar #menu-overlay {
+    margin-top: 46px;
+}

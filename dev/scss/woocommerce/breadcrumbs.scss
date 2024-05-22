@@ -1,0 +1,16 @@
+.breadcrumb-holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--white);
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin-bottom: var(--top-padding);
+    font-size: 14px;
+    text-transform: uppercase;
+
+    nav {
+        font-size: 12px;
+    }
+}
+

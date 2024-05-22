@@ -1,0 +1,51 @@
+.blog-page {
+
+    ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: var(--side-padding);
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .blog-post-card {
+        .image {
+            width: 100%;
+            aspect-ratio: 3/2;
+            border-radius: 25px;
+            border: 1px solid var(--white);
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+            margin: 0 0 4px 0;
+        }
+
+        .image:hover {
+            border: 1px solid var(--green);
+        }
+
+        a {
+            font-size: 14px;
+            line-height: 0.2 !important;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: var(--green);
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 767px) {
+    
+    .blog-page {
+
+        ul {
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+        }
+    }
+
+}

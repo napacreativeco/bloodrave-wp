@@ -1,0 +1,61 @@
+/*
+* Marquee
+*/
+.marquee-holder {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -2;
+
+    .marquee {
+        position: relative;
+        width: 100vw;
+        max-width: 100%;
+        height: 6vw;
+        overflow: hidden;
+    }
+    
+    .track {
+        position: absolute;
+        white-space: nowrap;
+        will-change: transform;
+        animation: marquee 32s linear infinite;
+    }
+
+    .content {
+        word-spacing: 0.01vw;
+        font-family: var(--times);
+        line-height: 0.75;
+        text-transform: uppercase;
+        font-size: 4vw;
+        letter-spacing: 0.08vw;
+        color: var(--grey);
+    }
+}
+
+body.admin-bar .marquee-holder {
+    margin-top: 34px;
+}
+
+
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+@media screen and (max-width: 767px) {
+
+    body.admin-bar .marquee-holder {
+        margin-top: 48px;
+    }
+
+    .marquee-holder {
+        padding: 10px 0;
+        .content {
+            font-size: 8vw;
+            letter-spacing: 0.08vw;
+            white-space: nowrap;
+        }
+    }
+}
