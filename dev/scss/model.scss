@@ -23,7 +23,8 @@ model-viewer {
 
 @media screen and (max-width: 767px) {
     
-    #model-holder, #myModel {
+    #model-holder, #myModel,
+    #model-holder model-viewer, #myModel model-viewer {
         display: none !important;
     }
     
