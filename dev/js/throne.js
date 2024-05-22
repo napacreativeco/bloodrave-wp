@@ -30,13 +30,13 @@ document.onmousemove = function(e) {
 function handleOrientation(event) {
     const x = event.accelerationIncludingGravity.x * 2;
     const y = event.accelerationIncludingGravity.y;
-    const z = event.accelerationIncludingGravity.z * 100;
+    const z = event.accelerationIncludingGravity.z * 10;
     
     var reader = document.getElementById("reader");
 
     reader.innerHTML = x + ", " + y + ", " + z;
 
-    modelViewerMobile.cameraOrbit = `${x}deg` + `${z}deg` + `"${y * 50}%"`;
+    modelViewerMobile.cameraOrbit = `${x}deg` + `${z + 115}deg` + `"${y * 50}%"`;
 }
 
 function deviceMotionPermission() {
