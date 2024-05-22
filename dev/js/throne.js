@@ -15,17 +15,38 @@ function getMouse(e) {
 * Logo + Coordinates
 *
 */
+const modelViewer = document.querySelector('#myModel');
+
 document.onmousemove = function(e) {
     const mouse = getMouse(e);
-    const modelViewer = document.querySelector('#myModel');
+
     modelViewer.cameraOrbit = `${mouse[0]}deg` + `${mouse[1]}deg ` + `"110%"`;
 
     var coor = document.getElementById('coordinates');
     coor.innerHTML = 'x'+mouse[0]*100 + 'y'+mouse[1]*100;
 }
 
+function deviceMotionPermission() {
+    if (typeof DeviceMotionEvent.requestPermission === 'function') {
+      // Handle iOS 13+ devices.
+      DeviceMotionEvent.requestPermission()
+        .then((state) => {
+          if (state === 'granted') {
+            window.addEventListener('devicemotion', handleOrientation);
+          } else {
+            console.error('Request to access the orientation was rejected');
+          }
+        })
+        .catch(console.error);
+    } else {
+      // Handle regular non iOS 13+ devices.
+      window.addEventListener('devicemotion', handleOrientation);
+    }
+}
 
-function handleMotionEvent(event) {
+window.onload = deviceMotionPermission();
+
+function handleOrientation(event) {
     const x = event.accelerationIncludingGravity.x;
     const y = event.accelerationIncludingGravity.y;
     const z = event.accelerationIncludingGravity.z;
