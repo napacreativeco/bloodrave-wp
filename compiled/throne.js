@@ -26,6 +26,8 @@ document.onmousemove = function(e) {
     coor.innerHTML = 'x'+mouse[0]*100 + 'y'+mouse[1]*100;
 }
 
+window.addEventListener("load", deviceMotionPermission());
+
 function deviceMotionPermission() {
     if (typeof DeviceMotionEvent.requestPermission === 'function') {
       // Handle iOS 13+ devices.
@@ -44,7 +46,7 @@ function deviceMotionPermission() {
     }
 }
 
-window.addEventListener("load", deviceMotionPermission());
+
 
 function handleOrientation(event) {
     const x = event.accelerationIncludingGravity.x;
