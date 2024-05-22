@@ -36,20 +36,24 @@
             flex-direction: row;
             align-items: flex-start;
             gap: 4px;
-            word-spacing: -12px;
+            word-spacing: 0.01vw;
             font-family: var(--times);
-            font-size: 40px;
-            text-transform: uppercase;
+            line-height: 0.75;
+    
+            a {
+                font-size: 4vw;
+                letter-spacing: 0.08vw;
+                white-space: nowrap;
+            }
     
             span.liner {
                 font-family: var(--mono);
-                font-size: 10px;
+                font-size: 1vw;
+                line-height: 85%;
                 color: var(--green);
-                padding-top: 6px;
                 word-spacing: 1px;
-                text-transform: none;
+                white-space: nowrap;
             }
-    
         }
     
         nav ul {
