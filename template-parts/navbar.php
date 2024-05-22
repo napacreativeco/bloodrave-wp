@@ -30,7 +30,7 @@
     </div>
 </div>
 
-<div class="request-motion">
+<div style="margin-top: 100px;" class="request-motion">
     <button onclick="deviceMotionPermission()">request motion</button>
 </div>
 
