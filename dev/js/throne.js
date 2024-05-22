@@ -36,7 +36,7 @@ function handleOrientation(event) {
 
     reader.innerHTML = x + ", " + y + ", " + z;
 
-    modelViewerMobile.cameraOrbit = `${x}deg` + `${z + 115}deg` + `"${y * 50}%"`;
+    modelViewerMobile.cameraOrbit = `${x}deg` + `${z + 135}deg` + `"${y * 50}%"`;
 }
 
 function deviceMotionPermission() {
