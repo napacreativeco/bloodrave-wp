@@ -35,7 +35,7 @@ function handleOrientation(event) {
 
     reader.innerHTML = x + ", " + y + ", " + z;
 
-    modelViewer.cameraOrbit = `${x}deg` + `${z}deg ` + `"110%"`;
+    modelViewer.cameraOrbit = `${x * 100}deg` + `${z * 100}deg` + `"110%"`;
   
 // Do something awesome.
 }
