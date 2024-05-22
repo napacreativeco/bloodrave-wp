@@ -5,6 +5,10 @@
     position: relative;
 }
 
+#model-holder-mobile {
+    display: none;
+}
+
 model-viewer {
     position: fixed;
     top: 0;
@@ -15,4 +19,16 @@ model-viewer {
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
+}
+
+@media screen and (max-width: 767px) {
+    
+    #model-holder {
+        display: none;
+    }
+    
+    #model-holder-mobile {
+        display: block;
+    }
+
 }

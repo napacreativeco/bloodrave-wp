@@ -29,13 +29,13 @@ document.onmousemove = function(e) {
 function handleOrientation(event) {
     const x = event.accelerationIncludingGravity.x;
     const y = event.accelerationIncludingGravity.y;
-    const z = event.accelerationIncludingGravity.z;
+    const z = event.accelerationIncludingGravity.z * 50;
     
     var reader = document.getElementById("reader");
 
     reader.innerHTML = x + ", " + y + ", " + z;
 
-    modelViewer.cameraOrbit = `${x * 50}deg` + `${z * 50}deg` + `"${y * 50}%"`;
+    modelViewer.cameraOrbit = `${x}deg` + `${z}deg` + `"${y * 50}%"`;
   
 // Do something awesome.
 }
