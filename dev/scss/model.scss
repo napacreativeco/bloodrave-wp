@@ -3,6 +3,7 @@
 */
 #model-holder {
     position: relative;
+    visibility: visible;
 
     model-viewer {
         position: fixed;
@@ -18,7 +19,7 @@
 }
 
 .mobile-model {
-    display: none;
+    visibility: hidden;
 
     model-viewer {
         position: fixed;
@@ -39,10 +40,11 @@
     
     .desktop-model {
         display: none !important;
+        visibility: hidden;
     }
     
     .mobile-model {
-        display: block;
+        visibility: visible;
     }
 
 }
