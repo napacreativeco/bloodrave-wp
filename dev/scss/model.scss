@@ -5,7 +5,7 @@
     position: relative;
 }
 
-#model-holder-mobile, #myModelMobile {
+.mobile-model {
     display: none;
 }
 
@@ -23,12 +23,11 @@ model-viewer {
 
 @media screen and (max-width: 767px) {
     
-    #model-holder, #myModel,
-    #model-holder model-viewer, #myModel model-viewer {
+    .desktop-model {
         display: none !important;
     }
     
-    #model-holder-mobile {
+    .mobile-model {
         display: block;
     }
 
