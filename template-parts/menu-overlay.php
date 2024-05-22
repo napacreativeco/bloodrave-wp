@@ -3,12 +3,9 @@
     
     <div class="holder">
 
-        <div class="logo">
-            <span><a href="/" title="Home">Blood Rave</a></span>
-            <span class="liner">
-                Dark Electronic Music<br />
-                Napa, California
-            </span>
+        <div class="announcement-text">
+            <?php echo get_theme_mod('announcement_title'); ?>
+            <?php echo get_theme_mod('announcement_description'); ?>
         </div>
 
         <nav class="mobile">

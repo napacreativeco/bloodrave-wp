@@ -41,18 +41,19 @@
             line-height: 0.75;
     
             a {
-                font-size: 4vw;
+                font-size: 16vw;
                 letter-spacing: 0.08vw;
                 white-space: nowrap;
             }
     
             span.liner {
                 font-family: var(--mono);
-                font-size: 1vw;
+                font-size: 3vw;
                 line-height: 85%;
                 color: var(--green);
                 word-spacing: 1px;
                 white-space: nowrap;
+                padding-right: 20px;
             }
         }
     

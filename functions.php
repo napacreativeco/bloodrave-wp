@@ -97,6 +97,7 @@ function special_nav_class ($classes, $item) {
 function at_customizer( $wp_customize ) {
 
     include get_template_directory() . '/inc/announcement.php';
+    include get_template_directory() . '/inc/overlay-announcement.php';
 
 }
 add_action( 'customize_register', 'at_customizer' );
