@@ -2,7 +2,7 @@
 
 $wp_customize->add_section( 'overlay_announcement_section',
     array(
-        'title' => __( 'Announcements' ),
+        'title' => __( 'Overlay Announcements' ),
         'description' => esc_html__( 'These are an example of Customizer Custom Controls.' ),
         'panel' => '', 
         'priority' => 160, 
