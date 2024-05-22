@@ -44,7 +44,7 @@ function deviceMotionPermission() {
     }
 }
 
-window.onload = deviceMotionPermission();
+document.addEventListener("load", deviceMotionPermission());
 
 function handleOrientation(event) {
     const x = event.accelerationIncludingGravity.x;
