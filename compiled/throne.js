@@ -28,7 +28,7 @@ document.onmousemove = function(e) {
 }
 
 function handleOrientation(event) {
-    const x = event.accelerationIncludingGravity.x * 10;
+    const x = event.accelerationIncludingGravity.x * 50;
     const y = event.accelerationIncludingGravity.y;
     const z = event.accelerationIncludingGravity.z * 10;
     
