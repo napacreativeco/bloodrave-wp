@@ -4,8 +4,8 @@
     <div class="holder">
 
         <div class="announcement-text">
-            <?php echo get_theme_mod('announcement_title'); ?>
-            <?php echo get_theme_mod('announcement_description'); ?>
+            <p><a href="<?php echo get_theme_mod('overlay_announcement_url'); ?>"><?php echo get_theme_mod('overlay_announcement_title'); ?></a></p>
+            <p><a href="<?php echo get_theme_mod('overlay_announcement_url'); ?>"><?php echo get_theme_mod('overlay_announcement_description'); ?></a></p>
         </div>
 
         <nav class="mobile">
