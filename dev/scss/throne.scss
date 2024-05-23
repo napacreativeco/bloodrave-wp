@@ -58,11 +58,12 @@ body.admin-bar .page-content {
     padding: var(--top-padding) var(--side-padding);
 }
 
-body.admin-bar .page-content {
-    margin-top: 34px;
-}
 
 @media screen and (max-width: 767px) {
+
+    .page-content {
+        padding: 0 var(--side-padding);
+    }
 
     body.admin-bar .page-content {
         margin-top: 48px;
