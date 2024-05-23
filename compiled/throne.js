@@ -22,7 +22,7 @@ const modelViewerMobile = document.querySelector('#myModelMobile');
 document.onmousemove = function(e) {
     const mouse = getMouse(e);
 
-    modelViewer.cameraOrbit = `${mouse[0]}deg` + `${mouse[1]}deg ` + `"110%"`;
+    modelViewer.cameraOrbit = `${mouse[0] / 2}deg` + `${mouse[1]}deg ` + `"110%"`;
 
     var coor = document.getElementById('coordinates');
     coor.innerHTML = 'x'+mouse[0]*100 + ', y'+mouse[1]*100;
