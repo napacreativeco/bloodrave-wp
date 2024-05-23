@@ -59,10 +59,9 @@ ul.shows-list {
     justify-content: center;
 
     img {
-        width: 100%;
-        max-width: 90%;
-        height: auto;
+        width: auto;
         max-height: 80vh;
+        aspect-ratio: inherit;
     }
 }
 
