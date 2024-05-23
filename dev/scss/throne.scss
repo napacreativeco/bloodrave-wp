@@ -56,12 +56,12 @@ select {
 /*
 *
 * Page Content
-* Navbar Height on Desktop: 50px
+* Navbar Height on Desktop: 4vw
 * Navbar Height on Mobile: 4vw
 */
 .page-content {
     position: relative;
-    margin-top: 50px;
+    margin-top: 4vw;
     padding: 14px var(--side-padding);
 }
 
