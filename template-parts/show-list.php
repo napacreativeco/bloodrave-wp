@@ -1,7 +1,7 @@
 <ul class="shows-list">
     <li>
         <div class="info">
-            <p>05.31.24</p>
+            <p class="date">05.31.24</p>
             <p class="lineup">Houses of Heaven, Ms. Boan, Blood Rave</p>
         </div> 
         <div class="flier">
