@@ -18,6 +18,7 @@ function getMouse(e) {
 const modelViewer = document.querySelector('#myModel');
 const modelViewerMobile = document.querySelector('#myModelMobile');
 
+/* Mouse Movement */
 document.onmousemove = function(e) {
     const mouse = getMouse(e);
 
@@ -27,6 +28,7 @@ document.onmousemove = function(e) {
     coor.innerHTML = 'x'+mouse[0]*100 + 'y'+mouse[1]*100;
 }
 
+/* Handle Motion */
 function handleOrientation(event) {
     const x = event.accelerationIncludingGravity.x * 10;
     const y = event.accelerationIncludingGravity.y;
@@ -43,6 +45,7 @@ function handleOrientation(event) {
     modelViewerMobile.cameraOrbit = `${x}deg` + `${z + 135}deg` + `"${y * 50}%"`;
 }
 
+/* Get Permission */
 function deviceMotionPermission() {
     if (typeof DeviceMotionEvent.requestPermission === 'function') {
       // Handle iOS 13+ devices.
@@ -61,6 +64,13 @@ function deviceMotionPermission() {
     }
 }
 
+/* Close Motion Modal */
+var motionModal = document.getElementById("motion-modal");
+var closeMotionModal = document.getElementById("close-motion-modal");
+
+closeMotionModal.addEventListener("click", function() {
+    motionModal.style.display = "none";
+});
 
   
 

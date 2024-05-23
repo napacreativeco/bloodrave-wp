@@ -7,11 +7,44 @@
     padding: 20px;
     border-radius: 25px;
     z-index: 999;
-
     display: none;
 
-    button {
+    .row {
+        position: relative;
+    }
+
+    p {
+        font-size: 12px;
+        color: var(--white);
+        margin: 0 0 20px 0;
+    }
+
+    #permission-button {
+        font-family: var(--times);
+        font-size: 26px;
+        white-space: nowrap;
+        letter-spacing: 0px;
+        border: 0;
         background: var(--green);
+        color: var(--black);
+        padding: 10px 20px;
+        border-radius: 25px;
+        line-height: 0.8;
+    }
+
+    #close-motion-modal {
+        font-family: var(--times);
+        font-size: 26px;
+        white-space: nowrap;
+        letter-spacing: 0px;
+        border: 0;
+        background: var(--black);
+        color: var(--white);
+        padding: 10px 20px;
+        border-radius: 25px;
+        border: 1px solid var(--white);
+        line-height: 0.8;
+        margin-top: 10px;
     }
 }
 
