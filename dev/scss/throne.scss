@@ -79,7 +79,7 @@ body.admin-bar .page-content {
 @media (orientation: landscape) {
 
     body.admin-bar .page-content {
-        margin-top: 9vw;
+        margin-top: calc(9vw + 20px);
         padding: 0 var(--side-padding);
     }
 
@@ -92,6 +92,7 @@ input:focus {
 
 header {
     padding: 0 0 var(--top-padding) 0;
+
     h1 {
         font-family: var(--times);
         font-weight: normal;
@@ -105,26 +106,6 @@ header {
     }
 }
 
-#hamburger {
-    display: none;
-}
-
-@media screen and (max-width: 767px) {
-
-    #hamburger {
-        display: flex;
-        flex-direction: column;
-        gap: 4px;
-        margin-top: -4px;
-    
-        span {
-            width: 40px;
-            height: 2px;
-            background: var(--white);
-        }
-    }
-
-}
 
 .cart-link {
     // position: absolute;

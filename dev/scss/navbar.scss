@@ -83,6 +83,32 @@ body.admin-bar .navbar {
     margin-top: 34px !important;
 }
 
+/*
+*
+* Hamburger
+*
+*/
+#hamburger {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+
+    #hamburger {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        margin-top: -4px;
+    
+        span {
+            width: 40px;
+            height: 2px;
+            background: var(--white);
+        }
+    }
+
+}
+
 @media (orientation: landscape) {
 
     .navbar {
