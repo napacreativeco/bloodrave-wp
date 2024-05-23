@@ -12,6 +12,7 @@
     --mobile-padding-top: 60px;
 }
 
+@import './reset.scss';
 
 body {
     background: var(--black);
@@ -23,6 +24,10 @@ body {
     font-size: 10px;
     font-weight: 400;
     font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
 }
 
 a {
@@ -55,12 +60,11 @@ select {
 */
 .page-content {
     display: block;
-    padding: var(--top-padding) var(--side-padding) 40px var(--side-padding);
+    padding: 14px var(--side-padding);
 }
 
 body.admin-bar .page-content {
     margin-top: 34px;
-    padding: 0 var(--side-padding);
 }
 
 
@@ -72,7 +76,6 @@ body.admin-bar .page-content {
 
     body.admin-bar .page-content {
         margin-top: 48px;
-        padding: 0 var(--side-padding);
     }
 
 }
