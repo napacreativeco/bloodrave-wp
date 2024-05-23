@@ -9,8 +9,10 @@ get_header(); ?>
 
 <div class="page-content <?php echo strtolower(get_the_title()); ?>">
 
-    <?php get_template_part("template-parts/show-list"); ?>
-    
+    <div class="wrapper">
+        <?php get_template_part("template-parts/show-list"); ?>
+    </div>
+
 </div>
 
 <?php get_footer(); ?>

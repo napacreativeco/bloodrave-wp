@@ -7,9 +7,13 @@
 @media screen and (max-width:767px) {
     
     .music {
-        display: flex;
-        justify-content: center;
-        padding-top: 60px;
+
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            padding-top: 60px;
+        }
+
     }
 
 }
