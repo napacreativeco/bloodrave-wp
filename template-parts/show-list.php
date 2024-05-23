@@ -5,7 +5,7 @@
             <p class="lineup">Houses of Heaven, Ms. Boan, Blood Rave</p>
         </div> 
         <div class="flier">
-            <p class="flier-link" title="Houses of Heaven, Ms. Boan, Blood Rave. Live at Thee Stork Club in Oakland, California." data-image="http://bloodrave.local/wp-content/uploads/2024/05/show-flier.jpeg">
+            <p class="flier-link" title="Houses of Heaven, Ms. Boan, Blood Rave. Live at Thee Stork Club in Oakland, California." data-image="http://bloodrave.tech/wp-content/uploads/2024/05/show-flier.jpeg">
                 View Flier
             </p>
         </div>
