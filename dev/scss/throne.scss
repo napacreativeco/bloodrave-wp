@@ -60,7 +60,7 @@ select {
 * Navbar Height on Mobile: 4vw
 */
 .page-content {
-    display: block;
+    position: relative;
     margin-top: 50px;
     padding: 14px var(--side-padding);
 }
