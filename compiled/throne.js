@@ -25,7 +25,7 @@ document.onmousemove = function(e) {
     modelViewer.cameraOrbit = `${mouse[0]}deg` + `${mouse[1]}deg ` + `"110%"`;
 
     var coor = document.getElementById('coordinates');
-    coor.innerHTML = 'x'+mouse[0]*100 + 'y'+mouse[1]*100;
+    coor.innerHTML = 'x'+mouse[0]*100 + ', y'+mouse[1]*100;
 }
 
 /* Handle Motion */
