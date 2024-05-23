@@ -14,7 +14,7 @@
 	<meta name="keywords" content="Techno, Goth, Darkwave, EBM">
 	<meta name="author" content="Blood Rave">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" type="image/x-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/favicon.ico">
 	<title><?php wp_title( '|', true, 'right' ); ?> <?php if (!is_front_page()) { ?> Blood Rave <?php } ?></title>
 	<link rel="profile" href="https://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php echo esc_url( get_bloginfo( 'pingback_url' ) ); ?>">
