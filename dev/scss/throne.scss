@@ -71,7 +71,7 @@ body.admin-bar .page-content {
 @media screen and (max-width: 767px) {
 
     .page-content {
-        margin-top: 4vw;
+        margin-top: calc(4vw + 4px);
     }
 
     body.admin-bar .page-content {
