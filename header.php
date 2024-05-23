@@ -33,8 +33,4 @@
 
 	<?php get_template_part('template-parts/model'); ?>
 
-	<?php get_template_part('template-parts/model-mobile'); ?>
-
-	<?php get_template_part('template-parts/motion-modal'); ?>
-
 	<?php get_template_part('template-parts/menu-overlay'); ?>

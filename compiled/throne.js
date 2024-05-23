@@ -29,48 +29,48 @@ document.onmousemove = function(e) {
 }
 
 /* Handle Motion */
-function handleOrientation(event) {
-    const x = event.accelerationIncludingGravity.x * 10;
-    const y = event.accelerationIncludingGravity.y;
-    const z = event.accelerationIncludingGravity.z * 10;
+// function handleOrientation(event) {
+//     const x = event.accelerationIncludingGravity.x * 10;
+//     const y = event.accelerationIncludingGravity.y;
+//     const z = event.accelerationIncludingGravity.z * 10;
 
-    var button = document.getElementById("permission-button");
-    var modal = document.getElementById("motion-modal");
-    modal.style.display = "none";
+//     var button = document.getElementById("permission-button");
+//     var modal = document.getElementById("motion-modal");
+//     modal.style.display = "none";
     
-    var reader = document.getElementById("reader");
+//     var reader = document.getElementById("reader");
 
-    reader.innerHTML = Math.trunc(x) + ", " + Math.trunc(y) + ", " + Math.trunc(z);
+//     reader.innerHTML = Math.trunc(x) + ", " + Math.trunc(y) + ", " + Math.trunc(z);
 
-    modelViewerMobile.cameraOrbit = `${x}deg` + `${z + 135}deg` + `"${y * 50}%"`;
-}
+//     modelViewerMobile.cameraOrbit = `${x}deg` + `${z + 135}deg` + `"${y * 50}%"`;
+// }
 
 /* Get Permission */
-function deviceMotionPermission() {
-    if (typeof DeviceMotionEvent.requestPermission === 'function') {
-      // Handle iOS 13+ devices.
-      DeviceMotionEvent.requestPermission()
-        .then((state) => {
-          if (state === 'granted') {
-            window.addEventListener('devicemotion', handleOrientation);
-          } else {
-            console.error('Request to access the orientation was rejected');
-          }
-        })
-        .catch(console.error);
-    } else {
-      // Handle regular non iOS 13+ devices.
-      window.addEventListener('devicemotion', handleOrientation);
-    }
-}
+// function deviceMotionPermission() {
+//     if (typeof DeviceMotionEvent.requestPermission === 'function') {
+//       // Handle iOS 13+ devices.
+//       DeviceMotionEvent.requestPermission()
+//         .then((state) => {
+//           if (state === 'granted') {
+//             window.addEventListener('devicemotion', handleOrientation);
+//           } else {
+//             console.error('Request to access the orientation was rejected');
+//           }
+//         })
+//         .catch(console.error);
+//     } else {
+//       // Handle regular non iOS 13+ devices.
+//       window.addEventListener('devicemotion', handleOrientation);
+//     }
+// }
 
 /* Close Motion Modal */
-var motionModal = document.getElementById("motion-modal");
-var closeMotionModal = document.getElementById("close-motion-modal");
+// var motionModal = document.getElementById("motion-modal");
+// var closeMotionModal = document.getElementById("close-motion-modal");
 
-closeMotionModal.addEventListener("click", function() {
-    motionModal.style.display = "none";
-});
+// closeMotionModal.addEventListener("click", function() {
+//     motionModal.style.display = "none";
+// });
 
   
 

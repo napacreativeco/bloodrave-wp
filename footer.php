@@ -3,7 +3,7 @@
     <div class="attribution">
         <div id="coordinates"></div>
         code by <a href="https://throne.work" title="Throne">Throne</a>
-        <div id="reader"></div>
+        <!-- <div id="reader"></div> -->
     </div>
 </footer>
 
