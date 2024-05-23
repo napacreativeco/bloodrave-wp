@@ -28,9 +28,10 @@
         </div>
         
     </div>
+    <button id="permission-button" onclick="deviceMotionPermission()">request motion</button>
 </div>
 
-<button id="permission-button" onclick="deviceMotionPermission()">request motion</button>
+
 
 <div class="marquee-holder">
     <div class="marquee">
