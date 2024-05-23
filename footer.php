@@ -1,3 +1,5 @@
+<?php get_template_part('template-parts/motion-modal'); ?>
+
 <footer>
     <div id="coordinates"></div>
     <div class="attribution">

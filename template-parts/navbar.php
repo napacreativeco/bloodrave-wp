@@ -28,7 +28,6 @@
         </div>
         
     </div>
-    <button id="permission-button" onclick="deviceMotionPermission()">request motion</button>
 </div>
 
 

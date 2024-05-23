@@ -1,0 +1,13 @@
+.motion-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--black);
+    padding: 20px;
+    border-radius: 25px;
+
+    button {
+        background: var(--green);
+    }
+}
