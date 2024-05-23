@@ -33,7 +33,8 @@ function handleOrientation(event) {
     const z = event.accelerationIncludingGravity.z * 10;
 
     var button = document.getElementById("permission-button");
-    button.style.display = "none";
+    var modal = document.getElementById("motion-modal");
+    modal.style.display = "none";
     
     var reader = document.getElementById("reader");
 
