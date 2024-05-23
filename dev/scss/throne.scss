@@ -42,12 +42,17 @@ select {
     font-family: var(--mono);
 }
 
-.page-content, #primary {
+
+/*
+*
+* Page Content
+*
+*/
+.page-content {
     padding: var(--top-padding) var(--side-padding) 40px var(--side-padding);
 }
 
-body.admin-bar .page-content, 
-body.admin-bar #primary {
+body.admin-bar .page-content {
     margin-top: 34px;
     padding: var(--top-padding) var(--side-padding);
 }
@@ -58,11 +63,14 @@ body.admin-bar .page-content {
 
 @media screen and (max-width: 767px) {
 
-    body.admin-bar .page-content, 
-    body.admin-bar #primary {
+    body.admin-bar .page-content {
         margin-top: 48px;
         padding: 0 var(--side-padding);
     }
+
+}
+
+@media (orientation: landscape) {
 
 }
 
