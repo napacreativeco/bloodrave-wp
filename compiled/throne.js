@@ -5,8 +5,8 @@
 */
 function getMouse(e) {
     return [
-        Math.round(e.clientX / window.innerWidth * 100),
-        Math.round(e.clientY / window.innerHeight * 190)
+        Math.round(e.clientX / window.innerWidth * 80),
+        Math.round(e.clientY / window.innerHeight * 120)
     ]
 }
 
