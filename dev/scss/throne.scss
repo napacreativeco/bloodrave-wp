@@ -72,6 +72,11 @@ body.admin-bar .page-content {
 
 @media (orientation: landscape) {
 
+    body.admin-bar .page-content {
+        margin-top: 9vw;
+        padding: 0 var(--side-padding);
+    }
+
 }
 
 input:focus {
