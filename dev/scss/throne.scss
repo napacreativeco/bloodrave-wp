@@ -9,6 +9,7 @@
 
     --side-padding: 12px;
     --top-padding: 20px;
+    --mobile-padding-top: 60px;
 }
 
 
@@ -62,6 +63,9 @@ body.admin-bar .page-content {
         padding: var(--top-padding) var(--side-padding);
     }
 
+    body.admin-bar .page-content {
+        padding-top: var(--mobile-padding-top);
+    }
 }
 
 input:focus {
