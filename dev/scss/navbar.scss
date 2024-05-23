@@ -79,24 +79,11 @@
 
 }
 
-#permission-button {
-    display: none;
-}
-
 body.admin-bar .navbar {
     margin-top: 34px !important;
 }
 
 @media screen and (max-width: 767px) {
-    
-    #permission-button {
-        
-    }
-    
-    
-    body.admin-bar #permission-button {
-        
-    }
 
     .navbar {
         padding: 10px 0;
