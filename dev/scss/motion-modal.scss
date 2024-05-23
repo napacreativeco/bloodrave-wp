@@ -1,4 +1,4 @@
-.motion-modal {
+#motion-modal {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -6,6 +6,7 @@
     background: var(--black);
     padding: 20px;
     border-radius: 25px;
+    z-index: 999;
 
     button {
         background: var(--green);
