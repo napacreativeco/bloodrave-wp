@@ -34,7 +34,7 @@ function handleOrientation(event) {
     
     var reader = document.getElementById("reader");
 
-    reader.innerHTML = x + ", " + y + ", " + z;
+    reader.innerHTML = Math.trunc(x) + ", " + Math.trunc(y) + ", " + Math.trunc(z);
 
     modelViewerMobile.cameraOrbit = `${x}deg` + `${z + 135}deg` + `"${y * 50}%"`;
 }
