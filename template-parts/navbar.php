@@ -30,9 +30,7 @@
     </div>
 </div>
 
-<div style="margin-top: 100px;" class="request-motion">
-    <button onclick="deviceMotionPermission()">request motion</button>
-</div>
+<button id="permission-button" onclick="deviceMotionPermission()">request motion</button>
 
 <div class="marquee-holder">
     <div class="marquee">

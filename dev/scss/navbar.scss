@@ -79,12 +79,25 @@
 
 }
 
+#permission-button {
+    display: none;
+}
+
 body.admin-bar .navbar {
     margin-top: 34px !important;
 }
 
 @media screen and (max-width: 767px) {
     
+    #permission-button {
+        margin-top: 50px;
+    }
+    
+    
+    body.admin-bar #permission-button {
+        margin-top: 80px;
+    }
+
     .navbar {
         padding: 10px 0;
         nav.desktop {

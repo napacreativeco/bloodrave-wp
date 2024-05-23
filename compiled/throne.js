@@ -31,6 +31,9 @@ function handleOrientation(event) {
     const x = event.accelerationIncludingGravity.x * 10;
     const y = event.accelerationIncludingGravity.y;
     const z = event.accelerationIncludingGravity.z * 10;
+
+    var button = document.getElementById("permission-button");
+    button.style.display = "none";
     
     var reader = document.getElementById("reader");
 
