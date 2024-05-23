@@ -46,6 +46,11 @@
             font-size: 4vw;
             letter-spacing: 0.08vw;
             white-space: nowrap;
+            cursor: pointer;
+        }
+
+        a:hover {
+            color: var(--green);
         }
 
         span.liner {
@@ -75,6 +80,11 @@
         border-radius: 25px;
         padding: 0px 20px;
         font-size: 14px;
+        cursor: pointer;
+    }
+
+    ul a:hover {
+        color: var(--green);
     }
 
 }
