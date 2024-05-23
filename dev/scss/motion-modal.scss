@@ -30,6 +30,8 @@
         padding: 10px 20px;
         border-radius: 25px;
         line-height: 0.8;
+        display: block;
+        width: 100%;
     }
 
     #close-motion-modal {
@@ -45,6 +47,8 @@
         border: 1px solid var(--white);
         line-height: 0.8;
         margin-top: 10px;
+        display: block;
+        width: 100%;
     }
 }
 
