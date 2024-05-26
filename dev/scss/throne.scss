@@ -63,7 +63,7 @@ select {
 .page-content {
     position: relative;
     margin-top: 4vw;
-    padding: 14px var(--side-padding);
+    padding: 4px var(--side-padding);
 }
 
 body.admin-bar .page-content {
@@ -74,8 +74,8 @@ body.admin-bar .page-content {
 @media screen and (max-width: 767px) {
 
     .page-content {
-        margin-top: 4vw;
-        padding: 14px var(--side-padding);
+        margin-top: 8vw;
+        padding: 12px var(--side-padding);
     }
 
     body.admin-bar .page-content {
