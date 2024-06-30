@@ -3,11 +3,6 @@
     
     <div class="holder">
 
-        <div class="announcement-text">
-            <p><a href="<?php echo get_theme_mod('overlay_announcement_url'); ?>"><?php echo get_theme_mod('overlay_announcement_title'); ?></a></p>
-            <p><a href="<?php echo get_theme_mod('overlay_announcement_url'); ?>"><?php echo get_theme_mod('overlay_announcement_description'); ?></a></p>
-        </div>
-
         <div class="logo">
             <a href="/" title="Blood Rave">
                 Blood&nbsp;
