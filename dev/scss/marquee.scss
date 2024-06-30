@@ -14,6 +14,8 @@
         max-width: 100%;
         height: 6vw;
         overflow: hidden;
+        display: flex;
+        align-items: center;
     }
     
     .track {
@@ -25,11 +27,13 @@
 
     .content {
         word-spacing: 0.01vw;
-        font-family: var(--times);
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
         line-height: 0.75;
         text-transform: uppercase;
         font-size: 4vw;
-        letter-spacing: 0.08vw;
+        letter-spacing: -0.3vw;
         color: var(--grey);
     }
 }

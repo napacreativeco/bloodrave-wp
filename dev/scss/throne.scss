@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
 :root {
     --black: #1e1e1e;
     --white: #efefef;
     --grey: #363636;
-    --green: rgb(131, 233, 48);
+    --green: rgb(174, 252, 92);
 
     --mono: "at";
     --times: "times";
@@ -63,24 +65,23 @@ select {
 */
 .page-content {
     position: relative;
-    margin-top: 4vw;
+    // margin-top: 4vw;
     padding: 4px var(--side-padding);
 }
 
 body.admin-bar .page-content {
-    margin-top: calc(34px + 4vw);
+    //margin-top: 34px;
 }
-
 
 @media screen and (max-width: 767px) {
 
     .page-content {
-        margin-top: 8vw;
+        //margin-top: 8vw;
         padding: 12px var(--side-padding);
     }
 
     body.admin-bar .page-content {
-        margin-top: calc(48px + 4vw);
+        //margin-top: 48px;
     }
 
 }
@@ -120,15 +121,34 @@ footer {
     bottom: 0;
     left: 0;
     text-transform: uppercase;
-    font-size: 6px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 4px;
+    padding: 4px 10px;
 
     a {
         color: var(--green);
     }
 
+    .attribution {
+        font-size: 8px;
+    }
+
 }
 
+
+@keyframes fader {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+
+
 @import './navbar.scss';
+
+@import './pages/home.scss';
 
 @import './menu-overlay.scss';
 
@@ -145,6 +165,8 @@ footer {
 @import './pages/show.scss';
 
 @import './pages/music.scss';
+
+@import './pages/contact.scss';
 
 @import './pages/blog-archive.scss';
 @import './pages/blog-post.scss';

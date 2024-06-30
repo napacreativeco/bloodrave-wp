@@ -2,10 +2,7 @@
 * Navbar
 */
 .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    padding: 10px;
     color: var(--white);
     z-index: 9;
     text-transform: uppercase;
@@ -16,7 +13,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 0 var(--side-padding);
+        //padding: 10px var(--side-padding) 0 var(--side-padding);
         position: relative;
     }
 
@@ -55,7 +52,7 @@
 
         span.liner {
             font-family: var(--mono);
-            font-size: 1vw;
+            font-size: 8px;
             line-height: 85%;
             color: var(--green);
             word-spacing: 1px;
@@ -79,7 +76,7 @@
         border: 1px solid var(--white);
         border-radius: 25px;
         padding: 0px 20px;
-        font-size: 14px;
+        font-size: 22px;
         cursor: pointer;
     }
 
@@ -87,10 +84,18 @@
         color: var(--green);
     }
 
+    .right {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 6px;
+        font-family: var(--times);
+        font-size: 3vw;
+    }
 }
 
 body.admin-bar .navbar {
-    margin-top: 34px !important;
+    //margin-top: 34px !important;
 }
 
 /*
@@ -99,69 +104,52 @@ body.admin-bar .navbar {
 *
 */
 #hamburger {
-    display: none;
-}
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: -2px;
+    cursor: pointer;
 
-@media screen and (max-width: 767px) {
-
-    #hamburger {
-        display: flex;
-        flex-direction: column;
-        gap: 6px;
-        margin-top: -2px;
-    
-        span {
-            width: 40px;
-            height: 2px;
-            background: var(--white);
-        }
-    }
-
-}
-
-@media (orientation: landscape) {
-
-    .navbar {
-
-        ul a {
-            border: 1px solid var(--white);
-            border-radius: 25px;
-            padding: 0px 20px;
-            font-size: 12px;
-        }
-
+    span {
+        width: 90px;
+        height: 4px;
+        background: var(--white);
     }
 }
+
+
+#hamburger:hover {
+    span {
+        background: var(--green);
+    }
+}
+
 
 @media screen and (max-width: 767px) {
 
     .navbar {
-        padding: 10px 0;
+        padding: 10px;
+        
         nav.desktop {
             display: none;
         }
 
         .logo {
             a {
-                font-size: 8vw;
+                font-size: 7vw;
                 letter-spacing: 0.08vw;
                 white-space: nowrap;
             }
 
             span.liner {
-                font-family: var(--mono);
-                font-size: 2vw;
-                line-height: 85%;
-                color: var(--green);
-                word-spacing: 1px;
-                white-space: nowrap;
+                display: none;
             }
         }
 
     }
 
     body.admin-bar .navbar {
-        margin-top: 48px !important;
+        //margin-top: 48px !important;
     }
 
 }

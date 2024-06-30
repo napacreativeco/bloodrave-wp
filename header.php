@@ -25,6 +25,15 @@
 	<?php wp_head(); ?>
 
 	<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+	<script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer-effects/dist/model-viewer-effects.min.js"></script>
+	<script async src="https://ga.jspm.io/npm:es-module-shims@1.7.1/dist/es-module-shims.js"></script>
+	<script type="importmap">
+		{
+			"imports": {
+				"three": "https://cdn.jsdelivr.net/npm/three@^0.164.1/build/three.module.min.js"
+			}
+		}
+	</script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -33,8 +42,22 @@
 
 	<div class="grain"></div>
 
-	<?php get_template_part('template-parts/navbar'); ?>
+	<?php if ( is_front_page() ) { ?>
+	<?php } else { ?>
+		<?php get_template_part('template-parts/navbar'); ?>
+	<?php } ?>
 
 	<?php get_template_part('template-parts/model'); ?>
 
 	<?php get_template_part('template-parts/menu-overlay'); ?>
+
+	<script src="https://unpkg.com/scrollreveal"></script>
+	<script>
+		var nodeArray = [
+			document.querySelector('.link-node'),
+			//document.querySelector('#spoon'),
+			//document.querySelector('#ice-cream')
+		];
+
+		ScrollReveal().reveal('.link-node');
+	</script>

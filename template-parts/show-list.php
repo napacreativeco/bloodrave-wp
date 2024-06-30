@@ -2,10 +2,10 @@
     <li>
         <div class="info">
             <p class="date">05.31.24</p>
-            <p class="lineup">Houses of Heaven, Ms. Boan, Blood Rave</p>
+            <p class="lineup model-opener" data-image="http://bloodrave.tech/wp-content/uploads/2024/05/show-flier.jpeg">Houses of Heaven, Ms. Boan, Blood Rave</p>
         </div> 
         <div class="flier">
-            <p class="flier-link" title="Houses of Heaven, Ms. Boan, Blood Rave. Live at Thee Stork Club in Oakland, California." data-image="http://bloodrave.tech/wp-content/uploads/2024/05/show-flier.jpeg">
+            <p class="flier-link model-opener" title="Houses of Heaven, Ms. Boan, Blood Rave. Live at Thee Stork Club in Oakland, California." data-image="http://bloodrave.tech/wp-content/uploads/2024/05/show-flier.jpeg">
                 View Flier
             </p>
         </div>

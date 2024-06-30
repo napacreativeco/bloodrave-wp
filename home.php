@@ -8,12 +8,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 get_header(); ?>
 
 <div class="page-content blog-page">
-
-    <header>
-        <h1>Blog</h1>
-        <p>Music news, and other things that interest me</p>
-    </header>
-
     <ul>
         <?php
         if ( have_posts() ) : while ( have_posts() ) : the_post();

@@ -5,8 +5,8 @@
 */
 function getMouse(e) {
     return [
-        Math.round(e.clientX / window.innerWidth * 80),
-        Math.round(e.clientY / window.innerHeight * 120)
+        Math.round(e.clientX / window.innerWidth * 70),
+        Math.round(e.clientY / window.innerHeight * 60)
     ]
 }
 
@@ -16,64 +16,25 @@ function getMouse(e) {
 *
 */
 const modelViewer = document.querySelector('#myModel');
-const modelViewerMobile = document.querySelector('#myModelMobile');
+const modelMobileViewer = document.querySelector('#myMobileModel');
 
 /* Mouse Movement */
 document.onmousemove = function(e) {
     const mouse = getMouse(e);
 
-    modelViewer.cameraOrbit = `${mouse[0] / 2}deg` + `${mouse[1]}deg ` + `"110%"`;
+    var mouseX = mouse[0];
+    var mouseY = mouse[1];
 
+    // Model
+    modelViewer.cameraOrbit = `${-1290 + mouseX}deg` + `${120 - mouseY}deg ` + `"700m"`;
+
+    // Mobile Model
+    modelMobileViewer.cameraOrbit = `${-1290 + mouseX}deg` + `${120 - mouseY}deg ` + `"700m"`;
+
+    // Text
     var coor = document.getElementById('coordinates');
-    coor.innerHTML = 'x'+mouse[0]*100 + ', y'+mouse[1]*100;
+    coor.innerHTML = 'x:/'+mouse[0]*32 + ', y:/'+mouse[1]*32;
 }
-
-/* Handle Motion */
-// function handleOrientation(event) {
-//     const x = event.accelerationIncludingGravity.x * 10;
-//     const y = event.accelerationIncludingGravity.y;
-//     const z = event.accelerationIncludingGravity.z * 10;
-
-//     var button = document.getElementById("permission-button");
-//     var modal = document.getElementById("motion-modal");
-//     modal.style.display = "none";
-    
-//     var reader = document.getElementById("reader");
-
-//     reader.innerHTML = Math.trunc(x) + ", " + Math.trunc(y) + ", " + Math.trunc(z);
-
-//     modelViewerMobile.cameraOrbit = `${x}deg` + `${z + 135}deg` + `"${y * 50}%"`;
-// }
-
-/* Get Permission */
-// function deviceMotionPermission() {
-//     if (typeof DeviceMotionEvent.requestPermission === 'function') {
-//       // Handle iOS 13+ devices.
-//       DeviceMotionEvent.requestPermission()
-//         .then((state) => {
-//           if (state === 'granted') {
-//             window.addEventListener('devicemotion', handleOrientation);
-//           } else {
-//             console.error('Request to access the orientation was rejected');
-//           }
-//         })
-//         .catch(console.error);
-//     } else {
-//       // Handle regular non iOS 13+ devices.
-//       window.addEventListener('devicemotion', handleOrientation);
-//     }
-// }
-
-/* Close Motion Modal */
-// var motionModal = document.getElementById("motion-modal");
-// var closeMotionModal = document.getElementById("close-motion-modal");
-
-// closeMotionModal.addEventListener("click", function() {
-//     motionModal.style.display = "none";
-// });
-
-  
-
 
 /*
 *

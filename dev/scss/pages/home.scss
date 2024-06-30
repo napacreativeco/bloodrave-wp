@@ -1,0 +1,128 @@
+.home-container {
+    //border: 1px solid var(--white);
+
+    a:hover {
+        color: var(--green);
+        text-decoration: none;
+
+        path {
+            fill: var(--green);
+        }
+    }
+
+    .home-text {
+        font-size: 10px;
+        filter: blur(1px);
+        text-transform: uppercase;
+    }
+
+    .home-spacer {
+        padding-top: 60vh;
+    }
+
+    .corner-svg {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+
+        svg {
+            width: 20vw;
+            max-width: 80px;
+            height: auto;
+            cursor: pointer;
+        }
+
+        svg:hover {
+
+            path {
+                fill: var(--green);
+            }
+        }
+    }
+
+    .bio {
+        font-size: 8vw;
+        letter-spacing: -0.5vw;
+        font-family: var(--times);
+        text-transform: uppercase;
+        line-height: 0.8;
+        text-align: center;
+        padding: 0 0 6px 0;
+
+        svg {
+            height: auto;
+            width: 2.8vw;
+        }
+    }
+
+    .nav-list {
+        font-size: 8vw;
+        letter-spacing: -0.5vw;
+        font-family: var(--times);
+        text-transform: uppercase;
+        line-height: 1;
+        padding: 0 0 20px 0;
+
+        #hamburger {
+            svg {
+                height: auto;
+                width: 7.8vw;
+            }
+        }
+
+        #hamburger:hover {
+            color: var(--green);
+
+            path {
+                fill: var(--green);
+            }
+        }
+
+        .merch {
+            svg {
+                width: 5.8vw;
+                height: auto;
+            }
+        }
+
+        .about {
+            svg {
+                width: 7.6vw;
+                height: auto;
+            }
+        }
+
+        .border-top {
+            display: block;
+            width: 100%;
+            border-top: 2px solid var(--white);
+        }
+
+        h2 {
+            display: block;
+        }
+
+        li {
+            border-bottom: 2px solid var(--white);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        li:nth-child(1) {
+            border-top: 2px solid var(--white);
+        }
+        
+    }
+}
+
+@media screen and (max-width: 767px) {
+    
+    .home-container {
+        .home-spacer {
+            padding-top: 67vh;
+        }
+    }
+
+}

@@ -14,7 +14,8 @@
         z-index: -1;
         width: 100vw;
         height: 100vh;
-        overflow-x: hidden;
+        overflow-x: hidden; 
+        transform: scaleX(-1);
     }
 }
 
@@ -22,36 +23,37 @@
 //     font-size: 6px;
 // }
 
-// .mobile-model {
-//     visibility: hidden;
+.mobile-model {
+    visibility: hidden;
+    display: none;
 
-//     model-viewer {
-//         position: fixed;
-//         top: 0;
-//         right: 0;
-//         bottom: 0;
-//         left: 0;
-//         z-index: -1;
-//         width: 100vw;
-//         height: 100vh;
-//         overflow-x: hidden;
-//     }
-// }
+    model-viewer {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        width: 100vw;
+        height: 100vh;
+        overflow-x: hidden;
+    }
+}
 
 
 
 @media screen and (max-width: 767px) {
     
-    // .desktop-model {
-    //     display: none !important;
-    //     visibility: hidden !important;
-    //     opacity: 0 !important;
-    // }
+    .desktop-model {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+    }
     
-    // .mobile-model {
-    //     visibility: visible;
-    //     opacity: 1 !important;
-    //     display: block !important;
-    // }
+    .mobile-model {
+        visibility: visible;
+        opacity: 1 !important;
+        display: block !important;
+    }
 
 }
