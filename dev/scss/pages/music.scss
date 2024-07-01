@@ -39,7 +39,7 @@ ul.release-list {
     }
 
     h2.title {
-        cursor: pointer;
+        //cursor: pointer;
         font-family: var(--times);
         font-size: 6vw;
         line-height: 0.8;
@@ -74,7 +74,7 @@ ul.release-list {
         gap: 4px;
 
         a {
-            cursor: pointer;
+            //cursor: pointer;
             font-size: 1.2vw;
             text-transform: uppercase;
             border: 1px solid var(--white);
@@ -106,7 +106,7 @@ ul.release-list {
         }
 
         h2.title {
-            cursor: pointer;
+            //cursor: pointer;
             font-family: var(--times);
             font-size: 8vw;
             line-height: 0.8;

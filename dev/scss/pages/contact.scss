@@ -32,7 +32,7 @@ ul.contact-list {
         gap: 4px;
 
         a {
-            cursor: pointer;
+            //cursor: pointer;
             font-size: 1.2vw;
             text-transform: uppercase;
             border: 1px solid var(--white);
@@ -48,7 +48,7 @@ ul.contact-list {
     }
 
     .model-opener {
-        cursor: pointer;
+        //cursor: pointer;
     }
 
     .model-opener:hover {

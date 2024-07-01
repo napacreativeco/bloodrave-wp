@@ -28,6 +28,14 @@ body {
     font-style: normal;
     letter-spacing: 0px;
     cursor: none;
+
+    a {
+        cursor: none;
+    }
+}
+
+.mf-cursor {
+    transition: all 0.2s ease-in-out;
 }
 
 .mf-cursor:before {
@@ -35,10 +43,24 @@ body {
     height: 120px !important;
     left: -60px !important;
     top: -60px !important;
+    transition: all 0.2s ease-in-out;
 }
 
 .mf-cursor.-active::before {
     background: var(--green) !important;
+    transition: all 0.2s ease-in-out;
+}
+
+.mf-cursor.-pointer::before {
+    //background: var(--green) !important;
+    background: transparent !important;
+    backdrop-filter: blur(16px) !important;
+    border: 8px solid var(--green) !important;
+    width: 800px !important;
+    height: 800px !important;
+    left: -400px !important;
+    top: -400px !important;
+    transition: all 0.2s ease-in-out;
 }
 
 @media screen and (max-width: 767px) {

@@ -73,12 +73,12 @@
 			activeState: '-active',
 			mediaState: '-media',
 			stateDetection: {
-				'-pointer': 'a,button',
+				'-pointer': 'a,button,#hamburger,.corner-svg,#close-menu',
 				'-hidden': 'iframe'
 			},
 			visible: true,
 			visibleOnState: false,
-			speed: 0.85,
+			speed: 0.65,
 			ease: 'expo.out',
 			overwrite: true,
 			skewing: 0,
