@@ -38,7 +38,7 @@ document.onmousemove = function(e) {
 
 var effectComposer = modelViewer.querySelector('effect-composer');
 var mobileComposer = modelMobileViewer.querySelector('effect-composer');
-var glitch = '<glitch-effect strength="0.2" mode="constant"></glitch-effect>';
+var glitch = '<glitch-effect strength="0.1" mode="constant"></glitch-effect>';
 var bloom = '<bloom-effect></bloom-effect>';
 
 document.onmousedown = function() {

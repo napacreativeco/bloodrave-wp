@@ -27,6 +27,18 @@ body {
     font-weight: 400;
     font-style: normal;
     letter-spacing: 0px;
+    cursor: none;
+}
+
+.mf-cursor:before {
+    width: 120px !important;
+    height: 120px !important;
+    left: -60px !important;
+    top: -60px !important;
+}
+
+.mf-cursor.-active::before {
+    background: var(--green) !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
