@@ -36,6 +36,25 @@ document.onmousemove = function(e) {
     coor.innerHTML = 'x:/'+mouse[0]*32 + ', y:/'+mouse[1]*32;
 }
 
+var effectComposer = modelViewer.querySelector('effect-composer');
+var mobileComposer = modelMobileViewer.querySelector('effect-composer');
+var glitch = '<glitch-effect strength="0.2" mode="constant"></glitch-effect>';
+var bloom = '<bloom-effect></bloom-effect>';
+
+document.onmousedown = function() {
+    effectComposer.innerHTML += glitch;
+
+    setTimeout(function() {
+        effectComposer.innerHTML = bloom;
+    }, 300);
+
+    mobileComposer.innerHTML += glitch;
+
+    setTimeout(function() {
+        mobileComposer.innerHTML = bloom;
+    }, 300);
+}
+
 /*
 *
 * Announcements

@@ -108,7 +108,7 @@ ul.release-list {
         h2.title {
             cursor: pointer;
             font-family: var(--times);
-            font-size: 6vw;
+            font-size: 8vw;
             line-height: 0.8;
             white-space: wrap;
             display: flex;
@@ -119,7 +119,7 @@ ul.release-list {
                 width: 12px;
                 height: auto;
                 margin-bottom: 3px;
-                opacity: 0;
+                opacity: 1;
             }
         }
 
