@@ -38,7 +38,7 @@
 </script>
 
 <script>
-    var flierLink = document.querySelectorAll(".model-opener");
+    var flierLink = document.querySelectorAll(".modal-opener");
 
     jQuery(flierLink).on('click', function() {
 
