@@ -1,7 +1,7 @@
 ul.contact-list {
     list-style: none;
     margin: 0;
-    padding: 20px 0;
+    padding: 0px 0;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -72,7 +72,7 @@ ul.contact-list {
             gap: 2px;
     
             a {
-                font-size: 2.4vw;
+                font-size: 12px;
             }
         }
     }
