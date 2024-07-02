@@ -127,14 +127,12 @@ ul.release-list {
             font-size: 8vw;
             line-height: 0.8;
             white-space: wrap;
-            display: flex;
-            align-items: flex-end;
             gap: 6px;
     
             svg {
                 width: 12px;
                 height: auto;
-                margin-bottom: 3px;
+                margin-bottom: 0px;
                 opacity: 1;
             }
         }
