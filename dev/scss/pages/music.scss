@@ -85,6 +85,7 @@ ul.release-list {
         display: flex;
         flex-direction: row;
         align-items: flex-end;
+        justify-content: flex-end;
         gap: 4px;
 
         a {
@@ -147,7 +148,7 @@ ul.release-list {
     
             a {
                 //cursor: pointer;
-                font-size: 14px;
+                font-size: 12px;
                 text-transform: uppercase;
                 border: 1px solid var(--white);
                 border-radius: 50px;
