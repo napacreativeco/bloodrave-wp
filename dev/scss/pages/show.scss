@@ -12,6 +12,7 @@ ul.shows-list {
         flex-direction: row;
         align-items: flex-end;
         border-bottom: 1px solid var(--white);
+        width: calc(100% - calc(var(--side-padding)* 2));
     }
 
     .info {
