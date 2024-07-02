@@ -176,6 +176,12 @@ footer {
 
 }
 
+@media screen and (max-width: 767px) {
+    footer {
+        font-size: 10px;
+    }
+}
+
 
 @keyframes fader {
     0% { opacity: 1; }
