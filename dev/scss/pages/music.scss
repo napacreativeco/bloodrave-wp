@@ -96,6 +96,7 @@ ul.release-list {
             padding: 4px 12px;
             display: block;
             text-decoration: none;
+            white-space: nowrap;
         }
 
         a:hover {
@@ -141,15 +142,16 @@ ul.release-list {
             display: flex;
             flex-direction: row;
             align-items: flex-end;
+            flex-wrap: wrap;
             gap: 2px;
     
             a {
                 //cursor: pointer;
-                font-size: 1.2vw;
+                font-size: 1.4vw;
                 text-transform: uppercase;
                 border: 1px solid var(--white);
                 border-radius: 50px;
-                padding: 4px 12px;
+                padding: 4px 8px;
                 display: block;
                 text-decoration: none;
             }
