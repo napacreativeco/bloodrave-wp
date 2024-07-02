@@ -153,40 +153,11 @@ header {
 
 
 .cart-link {
-    // position: absolute;
-    // top: 100%;
-    // right: var(--side-padding);
     line-height: 0.6;
     font-family: var(--times);
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    text-transform: uppercase;
-    font-size: 14px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    gap: 4px;
-    padding: 4px 10px;
-
-    a {
-        color: var(--green);
-    }
-
-    .attribution {
-        font-size: 8px;
-    }
-
-}
-
-@media screen and (max-width: 767px) {
-    footer {
-        font-size: 10px;
-    }
-}
+@import './footer.scss';
 
 
 @keyframes fader {

@@ -123,6 +123,12 @@
         .home-spacer {
             padding-top: 67vh;
         }
+
+        .nav-list {
+            .border-top {
+                border: 1px solid var(--white);
+            }
+        }
     }
 
 }
