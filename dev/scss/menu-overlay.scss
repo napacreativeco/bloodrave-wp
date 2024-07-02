@@ -134,6 +134,12 @@ body.admin-bar #menu-overlay {
 @media screen and (max-width: 767px) {
     
     #menu-overlay {
+
+        #close-menu {
+            padding: 12px;
+            margin-bottom: 2px;
+        }
+
         .holder {
 
             .logo {
