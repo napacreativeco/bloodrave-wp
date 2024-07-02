@@ -16,7 +16,7 @@ get_header(); ?>
                     <h2>Booking</h2>
                 </div> 
                 <div class="right">
-                    <p>contact@throne.work</p>
+                    <p>contact<x>@</x>throne.work</p>
                 </div>
             </li>
             <li>
