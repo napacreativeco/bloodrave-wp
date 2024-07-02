@@ -33,7 +33,7 @@ document.onmousemove = function(e) {
 
     // Text
     var coor = document.getElementById('coordinates');
-    coor.innerHTML = 'x:/'+mouse[0]*32 + ', y:/'+mouse[1]*32;
+    coor.innerHTML = 'x:/'+mouse[0]*32 + ',y:/'+mouse[1]*32;
 }
 
 var effectComposer = modelViewer.querySelector('effect-composer');
