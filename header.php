@@ -73,7 +73,7 @@
 			activeState: '-active',
 			mediaState: '-media',
 			stateDetection: {
-				'-pointer': 'a,button,#hamburger,.corner-svg,#close-menu',
+				'-pointer': 'a,button,#hamburger,.corner-svg,#close-menu,.modal-opener',
 				'-hidden': 'iframe'
 			},
 			visible: true,

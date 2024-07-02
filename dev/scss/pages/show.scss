@@ -49,16 +49,15 @@ ul.shows-list {
     }
 
     .flier-link {
-        font-size: 1.6vw;
+        font-size: 1.2vw;
         text-transform: uppercase;
-        border: 1px solid var(--white);
-        border-radius: 50px;
-        padding: 4px 12px;
+        line-height: 1.2;
+        text-align: right;
     }
-    .model-opener {
+    .modal-opener {
         //cursor: pointer;
     }
-    .model-opener:hover {
+    .modal-opener:hover {
         color: var(--green);
     }
 
@@ -95,7 +94,7 @@ ul.shows-list {
             justify-content: flex-start;
             align-items: flex-start;
             flex-direction: column;
-            gap: 12px;
+            gap: 2px;
         }
 
 
