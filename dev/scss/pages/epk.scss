@@ -8,6 +8,13 @@
         color: var(--green);
     }
 
+    .bio {
+        font-size: 34px;
+        font-family: var(--times);
+        line-height: 1;
+        margin: 0 0 40px 0;
+    }
+
     .split {
         display: grid;
         grid-template-columns: minmax(0, 5fr) minmax(0, 3fr);
