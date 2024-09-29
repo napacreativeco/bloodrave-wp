@@ -11,6 +11,7 @@ get_header(); ?>
 <div class="epk">
 
     <div class="bio">
+        <h2>Bio</h2>
         <?php the_content(); ?>
     </div>
 
