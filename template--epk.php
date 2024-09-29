@@ -32,6 +32,33 @@ get_header(); ?>
                 </ul>
             </div>
 
+            <!-- LOGOS -->
+             <div class="block-grid logos">
+                <h2>Logos</h2>
+                <ul>
+                    <li>
+                        <a href="http://bloodrave.tech/wp-content/uploads/2024/09/knight-logo.png" title="Blood-Rave-Logo">
+                            <img src="http://bloodrave.tech/wp-content/uploads/2024/09/knight-logo.png" alt="Blood Rave Logo"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://bloodrave.tech/wp-content/uploads/2024/09/metalized-logo.png" title="Blood-Rave-Logo">
+                            <img src="http://bloodrave.tech/wp-content/uploads/2024/09/metalized-logo.png" alt="Blood Rave Logo"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://bloodrave.tech/wp-content/uploads/2024/09/br-logo.png" title="Blood-Rave-Logo">
+                            <img src="http://bloodrave.tech/wp-content/uploads/2024/09/br-logo.png" alt="Blood Rave Logo"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://bloodrave.tech/wp-content/uploads/2024/09/br-chrome-tilt.png" title="Blood-Rave-Logo">
+                            <img src="http://bloodrave.tech/wp-content/uploads/2024/09/br-chrome-tilt.png" alt="Blood Rave Logo"/>
+                        </a>
+                    </li>
+                </ul>
+             </div>
+
             <!-- PHOTOS -->
             <div class="block-grid photos">
                 <h2>Photos</h2>
