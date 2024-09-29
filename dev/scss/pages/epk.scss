@@ -1,16 +1,31 @@
 .epk {
+    padding: 20px var(--side-padding);
+
+    h2 {
+        font-family: var(--times);
+        font-size: 38px;
+        margin: 0 0 10px 0;
+        color: var(--green);
+    }
 
     .split {
         display: grid;
-        grid-template-columns: 5fr 3fr;
+        grid-template-columns: minmax(0, 5fr) minmax(0, 3fr);
         align-items: flex-start;
         grid-gap: 80px;
     }
 
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+
     .block-grid {
         ul {
-            display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
         }
 
         a {
@@ -20,6 +35,41 @@
         img {
             display: block;
             width: 100%;
+        }
+    }
+
+    .releases {
+
+        h3 {
+            line-height: 1.4;
+            font-size: 14px;
+        }
+
+        img {
+            max-width: 200px;
+        }
+    }
+
+    .photos {
+        img {
+            max-width: 120px;
+            border: 1px solid var(--green);
+        }
+    }
+
+    .sidebar {
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        a {
+            font-size: 18px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
         }
     }
 }

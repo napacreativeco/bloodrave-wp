@@ -9,6 +9,7 @@ get_header(); ?>
 
 
 <div class="epk">
+
     <div class="bio">
         <?php the_content(); ?>
     </div>
@@ -18,11 +19,13 @@ get_header(); ?>
         <div class="content">
 
             <!-- ARTWORK -->
-            <div class="block-grid artwork">
+            <div class="block-grid releases">
+                <h2>Releases</h2>
                 <ul>
                     <li>
                         <a href="http://bloodrave.tech/wp-content/uploads/2024/09/blurry-ghoul.png" title="Determinate Bias">
                             <img src="http://bloodrave.tech/wp-content/uploads/2024/09/blurry-ghoul.png" alt="Blood Rave - Determinate Bias - Cover Artwork" />
+                            <h3>Determinate Bias<br />Full Length<br />2024</h3>
                         </a>
                     </li>
                 </ul>
@@ -30,10 +33,16 @@ get_header(); ?>
 
             <!-- PHOTOS -->
             <div class="block-grid photos">
+                <h2>Photos</h2>
                 <ul>
                     <li>
                         <a href="http://bloodrave.tech/wp-content/uploads/2024/05/7.png" title="promo-1">
                             <img src="http://bloodrave.tech/wp-content/uploads/2024/05/7.png" alt="Blood Rave Promo 1"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://bloodrave.tech/wp-content/uploads/2024/09/br-live-2.jpg" title="Blood-Rave-Live">
+                            <img src="http://bloodrave.tech/wp-content/uploads/2024/09/br-live-2.jpg" alt="Blood Rave - Live"/>
                         </a>
                     </li>
                     <li>
@@ -47,6 +56,11 @@ get_header(); ?>
                         </a>
                     </li>
                     <li>
+                        <a href="http://bloodrave.tech/wp-content/uploads/2024/09/br-live.jpg" title="Blood-Rave-Live">
+                            <img src="http://bloodrave.tech/wp-content/uploads/2024/09/br-live.jpg" alt="Blood Rave - Live"/>
+                        </a>
+                    </li>
+                    <li>
                         <a href="http://bloodrave.tech/wp-content/uploads/2024/09/woods-selfie.png" title="promo-4">
                             <img src="http://bloodrave.tech/wp-content/uploads/2024/09/woods-selfie.png" alt="Blood Rave Promo 4"/>
                         </a>
@@ -57,6 +71,7 @@ get_header(); ?>
         </div>
 
         <div class="sidebar">
+            <h2>Links</h2>
             <ul class="socials">
                 <li>
                     <a href="https://bloodrave.bandcamp.com" title="Blood Rave on Bandcamp">
