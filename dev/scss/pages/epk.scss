@@ -58,6 +58,10 @@
     }
 
     .photos {
+        ul {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
         img {
             max-width: 120px;
             border: 1px solid var(--green);
