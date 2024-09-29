@@ -1,0 +1,25 @@
+.epk {
+
+    .split {
+        display: grid;
+        grid-template-columns: 5fr 3fr;
+        align-items: flex-start;
+        grid-gap: 80px;
+    }
+
+    .block-grid {
+        ul {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        a {
+            display: block;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+}
