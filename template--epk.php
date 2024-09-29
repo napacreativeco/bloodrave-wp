@@ -36,8 +36,8 @@ get_header(); ?>
                 <h2>Photos</h2>
                 <ul>
                     <li>
-                        <a href="http://bloodrave.tech/wp-content/uploads/2024/05/7.png" title="promo-1">
-                            <img src="http://bloodrave.tech/wp-content/uploads/2024/05/7.png" alt="Blood Rave Promo 1"/>
+                        <a href="http://bloodrave.tech/wp-content/uploads/2024/05/7.png" title="Blood-Rave-Promo">
+                            <img src="http://bloodrave.tech/wp-content/uploads/2024/05/7.png" alt="Blood Rave Promo"/>
                         </a>
                     </li>
                     <li>
@@ -46,13 +46,18 @@ get_header(); ?>
                         </a>
                     </li>
                     <li>
-                        <a href="http://bloodrave.tech/wp-content/uploads/2024/09/lawn-edit.jpg" title="promo-2">
-                            <img src="http://bloodrave.tech/wp-content/uploads/2024/09/lawn-edit.jpg" alt="Blood Rave Promo 2"/>
+                        <a href="http://bloodrave.tech/wp-content/uploads/2024/09/lawn-edit.jpg" title="Blood-Rave-Promo">
+                            <img src="http://bloodrave.tech/wp-content/uploads/2024/09/lawn-edit.jpg" alt="Blood Rave Promo"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://bloodrave.tech/wp-content/uploads/2024/09/bandcamp-selfie.jpg" title="Blood-Rave-Promo">
+                            <img src="http://bloodrave.tech/wp-content/uploads/2024/09/bandcamp-selfie.jpg" alt="Blood Rave Promo"/>
                         </a>
                     </li>
                     <li>
                         <a href="http://bloodrave.tech/wp-content/uploads/2024/09/promo-selfie.png" title="promo-3">
-                            <img src="http://bloodrave.tech/wp-content/uploads/2024/09/promo-selfie.png" alt="Blood Rave Promo 3"/>
+                            <img src="http://bloodrave.tech/wp-content/uploads/2024/09/promo-selfie.png" alt="Blood Rave Promo"/>
                         </a>
                     </li>
                     <li>
@@ -61,8 +66,8 @@ get_header(); ?>
                         </a>
                     </li>
                     <li>
-                        <a href="http://bloodrave.tech/wp-content/uploads/2024/09/woods-selfie.png" title="promo-4">
-                            <img src="http://bloodrave.tech/wp-content/uploads/2024/09/woods-selfie.png" alt="Blood Rave Promo 4"/>
+                        <a href="http://bloodrave.tech/wp-content/uploads/2024/09/woods-selfie.png" title="Blood-Rave-Promo">
+                            <img src="http://bloodrave.tech/wp-content/uploads/2024/09/woods-selfie.png" alt="Blood Rave Promo"/>
                         </a>
                     </li>
                 </ul>
