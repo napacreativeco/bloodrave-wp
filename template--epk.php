@@ -1,5 +1,5 @@
 <?php
-/* Template name: Releases */
+/* Template name: EPK */
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
