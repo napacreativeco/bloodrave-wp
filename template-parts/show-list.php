@@ -1,6 +1,54 @@
 <ul class="shows-list">
     <li>
         <div class="info">
+            <p class="lineup modal-opener" data-image="http://bloodrave.tech/wp-content/uploads/2024/10/dark-disco-at-the-heart-of-the-world-static-ghost.jpeg">Dark Disco w/ At The Heart of The World, Static Ghost, Blood Rave</p>
+        </div> 
+        <div class="flier">
+            <p class="flier-link modal-opener" title="Dark Disco with At The Heart of The World, Static Ghost in Roseburg, Oregon" data-image="http://bloodrave.tech/wp-content/uploads/2024/10/dark-disco-at-the-heart-of-the-world-static-ghost.jpeg">
+                11.29.24<br />
+                The Hive<br />
+                Roseburg, OR
+            </p>
+        </div>
+    </li>
+    <li>
+        <div class="info">
+            <p class="lineup modal-opener" data-image="http://bloodrave.tech/wp-content/uploads/2024/10/vore-mind-mirage-blood-rave.jpeg">Vore, Gall, Blood Rave, Mind Mirage</p>
+        </div> 
+        <div class="flier">
+            <p class="flier-link modal-opener" title="Psyched! Fest w/ Dark Chisme, Ex-Heir in San Francisco, California" data-image="http://bloodrave.tech/wp-content/uploads/2024/10/vore-mind-mirage-blood-rave.jpeg">
+                11.16.24<br />
+                Eli's<br />
+                Oakland, CA
+            </p>
+        </div>
+    </li>
+    <li>
+        <div class="info">
+            <p class="lineup modal-opener" data-image="http://bloodrave.tech/wp-content/uploads/2024/10/wing-tips-blood-rave.jpg">Wing Tips, Ronnie Stone, Blood Rave</p>
+        </div> 
+        <div class="flier">
+            <p class="flier-link modal-opener" title="Wing Tips, Ronnie Stone, Blood Rave in San Francisco, California" data-image="http://bloodrave.tech/wp-content/uploads/2024/10/wing-tips-blood-rave.jpg">
+                11.12.24<br />
+                The Knockout<br />
+                San Francisco, CA
+            </p>
+        </div>
+    </li>
+    <li>
+        <div class="info">
+            <p class="lineup modal-opener" data-image="http://bloodrave.tech/wp-content/uploads/2024/10/psyched-fest-dark-chisme-blood-rave.jpeg">Psyched! Fest w/ Dark Chisme, Ex-Heir</p>
+        </div> 
+        <div class="flier">
+            <p class="flier-link modal-opener" title="Psyched! Fest w/ Dark Chisme, Ex-Heir in San Francisco, California" data-image="http://bloodrave.tech/wp-content/uploads/2024/10/psyched-fest-dark-chisme-blood-rave.jpeg">
+                11.02.24<br />
+                Edinburgh Castle<br />
+                San Francisco, CA
+            </p>
+        </div>
+    </li>
+    <li>
+        <div class="info">
             <p class="lineup modal-opener" data-image="https://bloodrave.tech/wp-content/uploads/2024/07/thee-stork-club-tassel-still-ruins-blood-rave.jpg">Tassel, Still Ruins, Blood Rave</p>
         </div> 
         <div class="flier">
